@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".GameScreen">
+
+
+    <TextView
+        android:id="@+id/this_is_your_friend_piplup"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="This is your friend, Piplup !"
+        app:layout_constraintTop_toBottomOf="@id/piplup_gamescreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#305472"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_sayhi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/this_is_your_friend_piplup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Say hi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#305472" />
+
+    <Button
+        android:id="@+id/btn_pethim"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btn_sayhi"
+        app:layout_constraintStart_toStartOf="@id/btn_sayhi"
+        app:layout_constraintEnd_toEndOf="@id/btn_sayhi"
+        android:text="pet him"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#305472" />
+
+    <Button
+        android:id="@+id/btn_smiletohim"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="smile to him"
+        app:layout_constraintTop_toBottomOf="@id/btn_pethim"
+        app:layout_constraintStart_toStartOf="@id/btn_sayhi"
+        app:layout_constraintEnd_toEndOf="@id/btn_sayhi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#305472" />
+
+    <Button
+        android:id="@+id/btn_givehimfood"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="give him food"
+        app:layout_constraintTop_toBottomOf="@id/btn_smiletohim"
+        app:layout_constraintStart_toStartOf="@id/btn_sayhi"
+        app:layout_constraintEnd_toEndOf="@id/btn_sayhi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#305472" />
+
+    <ImageView
+        android:id="@+id/piplup_gamescreen"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/piplup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

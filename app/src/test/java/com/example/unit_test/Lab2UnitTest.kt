@@ -38,7 +38,7 @@ class Lab2UnitTest {
     assertFalse(result)
     }
     @Test
-    fun megacharizardTurn_mewtwoAboveDamageAlive_returnFalse() {
+    fun megacharizardTurn_mewtwoAboveDamageAlive_returnTrue() {
         val result = Lab2Unit.megacharizardTurnAttackMewtwo(
             50,
             25,

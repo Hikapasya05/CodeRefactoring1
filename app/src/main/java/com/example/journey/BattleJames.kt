@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import com.example.journey.databinding.ActivityBattleJamesBinding
 
 
-class battle_james : AppCompatActivity() {
+class BattleJames : AppCompatActivity() {
     private lateinit var binding: ActivityBattleJamesBinding
 
 
@@ -17,7 +17,7 @@ class battle_james : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.battleJamesBtn.setOnClickListener {
-            val intent = Intent(this@battle_james, scene7::class.java)
+            val intent = Intent(this@BattleJames, JamesPokemonPick::class.java)
             startActivity(intent)
         }
 

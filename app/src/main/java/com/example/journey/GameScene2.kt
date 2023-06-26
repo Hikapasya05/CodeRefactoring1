@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import com.example.journey.databinding.ActivityGameScreen2Binding
 
-class game_screen_2 : AppCompatActivity() {
+class GameScene2 : AppCompatActivity() {
     private lateinit var binding: ActivityGameScreen2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,7 +14,7 @@ class game_screen_2 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnTellhimyouarehappytoo.setOnClickListener{
-            val intent = Intent(this@game_screen_2, scene1::class.java)
+            val intent = Intent(this@GameScene2, GameScene3::class.java)
             startActivity(intent)
         }
 

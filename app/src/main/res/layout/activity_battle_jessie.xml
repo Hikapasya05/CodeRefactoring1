@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".scene5">
+    tools:context=".BattleJessie">
 
 
 
     <TextView
-        android:id="@+id/jessiejamestalk"
+        android:id="@+id/jessie_james_talk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -51,14 +51,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jessiejamestalk" />
+        app:layout_constraintTop_toBottomOf="@+id/jessie_james_talk" />
 
     <FrameLayout
         android:id="@+id/jessie_bewear"
         android:layout_width="wrap_content"
         android:layout_height="370dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/bewear1"

@@ -6,55 +6,42 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".scene4">
+    tools:context=".GameScene4">
+
 
     <ImageView
-        android:id="@+id/forest1"
+        android:id="@+id/letter"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="80dp"
-        app:srcCompat="@drawable/forest"
-         />
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/letter" />
 
     <TextView
-        android:id="@+id/you_found_a_split_road"
+        android:id="@+id/you_found_a_letter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="you found a letter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/forest1"
+        app:layout_constraintTop_toBottomOf="@id/letter"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="#305472"
-        android:textSize="24sp"
-        android:text="you found a split road"
-         />
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/btn_go_up_the_stairway"
-        android:layout_width="300dp"
+        android:id="@+id/btn_readit"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go up the stairway"
+        android:text="Read it"
+        app:layout_constraintTop_toBottomOf="@id/you_found_a_letter"
+        android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/you_found_a_split_road"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
         android:textColor="@color/white"
-        android:textSize="20sp"
         app:backgroundTint="#305472" />
 
 
-
-    <Button
-        android:id="@+id/btn_turnright"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Turn right"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_go_up_the_stairway"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:backgroundTint="#305472"
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>

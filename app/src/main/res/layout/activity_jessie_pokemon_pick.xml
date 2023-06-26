@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GiovanniPokemonPick">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".JessiePokemonPick">
+
 
     <Button
-        android:id="@+id/megacharizardBtn"
+        android:id="@+id/charizardBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="272dp"
         android:backgroundTint="#305472"
-        android:text="Mega Charizard"
+        android:text="Charizard"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,12 +24,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/megalucarioBtn"
+        android:id="@+id/scizorBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="564dp"
+        android:layout_marginTop="516dp"
         android:backgroundTint="#305472"
-        android:text="Mega Lucario"
+        android:text="Scizor"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,26 +37,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/megacharizard_choose_pokemon"
-        android:layout_width="wrap_content"
-        android:layout_height="170dp"
-        android:layout_marginTop="92dp"
+        android:id="@+id/charizard_choose_pokemon"
+        android:layout_width="240dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/megacharizard" />
+        app:srcCompat="@drawable/charizard" />
 
     <ImageView
-        android:id="@+id/lucario_choose_pokemon"
-        android:layout_width="wrap_content"
+        android:id="@+id/scizor_choose_pokemon"
+        android:layout_width="240dp"
         android:layout_height="210dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="280dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/megalucario" />
+        app:srcCompat="@drawable/scizor" />
 
     <TextView
         android:id="@+id/choose_your_pokemon"
@@ -65,6 +66,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-

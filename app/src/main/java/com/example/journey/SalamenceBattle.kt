@@ -1,18 +1,16 @@
 package com.example.journey
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.View
 import android.widget.Toast
 import com.example.journey.databinding.ActivitySalamenceBattleBinding
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
 
 
-class salamence_battle : AppCompatActivity() {
+class SalamenceBattle : AppCompatActivity() {
     private lateinit var binding: ActivitySalamenceBattleBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,9 +44,9 @@ class salamence_battle : AppCompatActivity() {
     }
     private fun battle(progressBar: CircularProgressBar, progress: Float) {
         if (progress == 0f) {
-            Toast.makeText(this@salamence_battle, "Yanmega fainted", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@SalamenceBattle, "Yanmega fainted", Toast.LENGTH_SHORT).show()
             Handler(Looper.getMainLooper()).postDelayed({
-                val intent = Intent(this@salamence_battle, battle_defeat_james::class.java)
+                val intent = Intent(this@SalamenceBattle, BattleDefeatJames::class.java)
                 startActivity(intent)
             }, 2000)
         }

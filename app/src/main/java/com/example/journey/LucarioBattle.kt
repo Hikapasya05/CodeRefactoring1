@@ -1,7 +1,6 @@
 package com.example.journey
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -10,7 +9,7 @@ import android.widget.Toast
 import com.example.journey.databinding.ActivityLucarioBattleBinding
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
 
-class lucario_battle : AppCompatActivity() {
+class LucarioBattle : AppCompatActivity() {
     private lateinit var binding: ActivityLucarioBattleBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +30,7 @@ class lucario_battle : AppCompatActivity() {
                     binding.lucarioHPValue.text = (progressLucario.toInt()).toString()
                     battle(lucarioHP, progressLucario)
                     Toast.makeText(
-                        this@lucario_battle,
+                        this@LucarioBattle,
                         "Mewtwo used Psycho cut.",
                         Toast.LENGTH_SHORT
                     ).show()
@@ -50,7 +49,7 @@ class lucario_battle : AppCompatActivity() {
                     battle(lucarioHP, progressLucario)
 
                     Toast.makeText(
-                        this@lucario_battle,
+                        this@LucarioBattle,
                         "Mewtwo used Hyper beam.",
                         Toast.LENGTH_SHORT
                     ).show()
@@ -69,7 +68,7 @@ class lucario_battle : AppCompatActivity() {
                     battle(lucarioHP, progressLucario)
 
                     Toast.makeText(
-                        this@lucario_battle,
+                        this@LucarioBattle,
                         "Mewtwo used Psyshock.",
                         Toast.LENGTH_SHORT
                     ).show()
@@ -85,9 +84,9 @@ class lucario_battle : AppCompatActivity() {
     }
     private fun battle(progressBar: CircularProgressBar, progress: Float) {
         if (progress == 0f) {
-            Toast.makeText(this@lucario_battle, "Mewtwo fainted", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@LucarioBattle, "Mewtwo fainted", Toast.LENGTH_SHORT).show()
             Handler(Looper.getMainLooper()).postDelayed({
-                val intent = Intent(this@lucario_battle, giovanni_defeat::class.java)
+                val intent = Intent(this@LucarioBattle, GiovanniDefeatScene::class.java)
                 startActivity(intent)
             }, 2000)
         }

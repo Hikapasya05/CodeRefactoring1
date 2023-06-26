@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="#305472"
     android:layout_height="match_parent"
-    tools:context=".giovanni_defeat">
+    tools:context=".GiovanniDefeatScene">
 
     <Button
         android:id="@+id/savePiplupBtn"

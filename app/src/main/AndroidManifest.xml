@@ -12,73 +12,73 @@
         android:theme="@style/Theme.Journey"
         tools:targetApi="31">
         <activity
-            android:name=".piplupsaved"
+            android:name=".PiplupSavedEnd"
             android:exported="false" />
         <activity
-            android:name=".giovanni_defeat"
+            android:name=".GiovanniDefeatScene"
             android:exported="false" />
         <activity
-            android:name=".megacharizard_battle"
+            android:name=".MegaCharizardBattle"
             android:exported="false" />
         <activity
-            android:name=".giovannipokemonpick"
+            android:name=".GiovanniPokemonPick"
             android:exported="false" />
         <activity
-            android:name=".lucario_battle"
+            android:name=".LucarioBattle"
             android:exported="false" />
         <activity
-            android:name=".talk_giovanni"
+            android:name=".GiovanniTalk"
             android:exported="false" />
         <activity
-            android:name=".giovanni_glimpse"
+            android:name=".GiovanniGlimpseScene"
             android:exported="false" />
         <activity
-            android:name=".battle_defeat_james"
+            android:name=".BattleDefeatJames"
             android:exported="false" />
         <activity
-            android:name=".megaswampert_battle"
+            android:name=".MegaSwampertBattle"
             android:exported="false" />
         <activity
-            android:name=".salamence_battle"
+            android:name=".SalamenceBattle"
             android:exported="false" />
         <activity
-            android:name=".scene7"
+            android:name=".JamesPokemonPick"
             android:exported="false" />
         <activity
-            android:name=".battle_james"
+            android:name=".BattleJames"
             android:exported="false" />
         <activity
-            android:name=".scizor_battle"
+            android:name=".ScizorBattle"
             android:exported="false" />
         <activity
-            android:name=".battle_defeat_jessie"
+            android:name=".BattleDefeatJessie"
             android:exported="false" />
         <activity
-            android:name=".charizard_battle"
+            android:name=".CharizardBattle"
             android:exported="false" />
         <activity
-            android:name=".scene6"
+            android:name=".JessiePokemonPick"
             android:exported="false" />
         <activity
-            android:name=".scene5"
+            android:name=".BattleJessie"
             android:exported="false" />
         <activity
-            android:name=".scene4"
+            android:name=".GameScene6"
             android:exported="false" />
         <activity
-            android:name=".scene3"
+            android:name=".GameScene5"
             android:exported="false" />
         <activity
-            android:name=".scene2"
+            android:name=".GameScene4"
             android:exported="false" />
         <activity
-            android:name=".scene1"
+            android:name=".GameScene3"
             android:exported="false" />
         <activity
-            android:name=".game_screen_2"
+            android:name=".GameScene2"
             android:exported="false" />
         <activity
-            android:name=".GameScreen"
+            android:name=".GameScene1"
             android:exported="false" />
         <activity
             android:name=".TitleScreen"

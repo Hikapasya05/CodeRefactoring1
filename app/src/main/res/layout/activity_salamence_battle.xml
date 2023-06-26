@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".salamence_battle">
+    tools:context=".SalamenceBattle">
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="207dp"

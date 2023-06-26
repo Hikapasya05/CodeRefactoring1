@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import com.example.journey.databinding.ActivityGiovanniDefeatBinding
 
-class giovanni_defeat : AppCompatActivity() {
+class GiovanniDefeatScene : AppCompatActivity() {
     private lateinit var binding: ActivityGiovanniDefeatBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,7 +14,7 @@ class giovanni_defeat : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.savePiplupBtn.setOnClickListener {
-            val intent = Intent(this@giovanni_defeat,piplupsaved::class.java)
+            val intent = Intent(this@GiovanniDefeatScene,PiplupSavedEnd::class.java)
             startActivity(intent)
         }
     }

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".charizard_battle">
+    tools:context=".CharizardBattle">
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/charizardBack"

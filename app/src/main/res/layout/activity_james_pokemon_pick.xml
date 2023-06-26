@@ -6,55 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".scene6">
-
-
-    <Button
-        android:id="@+id/charizardBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="272dp"
-        android:backgroundTint="#305472"
-        android:text="Charizard"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/scizorBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="516dp"
-        android:backgroundTint="#305472"
-        android:text="Scizor"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/charizard_choose_pokemon"
-        android:layout_width="240dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/charizard" />
-
-    <ImageView
-        android:id="@+id/scizor_choose_pokemon"
-        android:layout_width="240dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="280dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/scizor" />
+    tools:context=".JamesPokemonPick">
 
     <TextView
         android:id="@+id/choose_your_pokemon"
@@ -65,5 +17,58 @@
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/salamence_choose_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="152dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/salamence"
+        />
+
+    <Button
+        android:id="@+id/salamenceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:backgroundTint="#305472"
+        android:text="salamence"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/megaswampert_choose_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="171dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/megaswampert"
+        />
+
+    <Button
+        android:id="@+id/megaswampertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="528dp"
+        android:backgroundTint="#305472"
+        android:text="mega swampert"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import com.example.journey.databinding.ActivityBattleDefeatJamesBinding
 
-class battle_defeat_james : AppCompatActivity() {
+class BattleDefeatJames : AppCompatActivity() {
     private lateinit var binding: ActivityBattleDefeatJamesBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,8 +14,8 @@ class battle_defeat_james : AppCompatActivity() {
         binding = ActivityBattleDefeatJamesBinding.inflate(LayoutInflater.from(this),null, false)
         setContentView(binding.root)
 
-        binding.continuefurtherBtnJessie.setOnClickListener {
-            val intent = Intent(this@battle_defeat_james, giovanni_glimpse::class.java)
+        binding.continueFurtherBtnJessie.setOnClickListener {
+            val intent = Intent(this@BattleDefeatJames, GiovanniGlimpseScene::class.java)
             startActivity(intent)
         }
     }

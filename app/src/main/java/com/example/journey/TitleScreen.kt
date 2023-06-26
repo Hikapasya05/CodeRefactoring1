@@ -14,7 +14,7 @@ class TitleScreen : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnStart.setOnClickListener{
-            val intent= Intent(this@TitleScreen, GameScreen::class.java)
+            val intent= Intent(this@TitleScreen, GameScene1::class.java)
             startActivity(intent)
         }
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".scene3">
+    tools:context=".GameScene5">
 
     <ImageView
         android:id="@+id/TeamRLetter"

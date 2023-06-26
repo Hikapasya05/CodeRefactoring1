@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import com.example.journey.databinding.ActivityTalkGiovanniBinding
 
-class talk_giovanni : AppCompatActivity() {
+class GiovanniTalk : AppCompatActivity() {
     private lateinit var binding: ActivityTalkGiovanniBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,7 +14,7 @@ class talk_giovanni : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.battleGiovanniBtn.setOnClickListener {
-            val intent = Intent(this@talk_giovanni, giovannipokemonpick::class.java)
+            val intent = Intent(this@GiovanniTalk, GiovanniPokemonPick::class.java)
             startActivity(intent)
         }
     }

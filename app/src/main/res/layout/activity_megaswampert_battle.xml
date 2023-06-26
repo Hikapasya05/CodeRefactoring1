@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".megaswampert_battle">
+    tools:context=".MegaSwampertBattle">
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="185dp"

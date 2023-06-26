@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".scizor_battle">
+    tools:context=".ScizorBattle">
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="191dp"

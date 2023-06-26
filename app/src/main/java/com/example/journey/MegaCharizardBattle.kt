@@ -1,7 +1,6 @@
 package com.example.journey
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -10,7 +9,7 @@ import android.widget.Toast
 import com.example.journey.databinding.ActivityMegacharizardBattleBinding
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
 
-class megacharizard_battle : AppCompatActivity() {
+class MegaCharizardBattle : AppCompatActivity() {
     private lateinit var binding: ActivityMegacharizardBattleBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +33,7 @@ class megacharizard_battle : AppCompatActivity() {
                     binding.megacharizardHPValue.text = (progressMegacharizard.toInt()).toString()
                     battle(megacharizardHP, progressMegacharizard)
                     Toast.makeText(
-                        this@megacharizard_battle,
+                        this@MegaCharizardBattle,
                         "Mewtwo used Hyper beam.",
                         Toast.LENGTH_SHORT
                     ).show()
@@ -53,7 +52,7 @@ class megacharizard_battle : AppCompatActivity() {
                     battle(megacharizardHP, progressMegacharizard)
 
                     Toast.makeText(
-                        this@megacharizard_battle,
+                        this@MegaCharizardBattle,
                         "Mewtwo used Psycho cut.",
                         Toast.LENGTH_SHORT
                     ).show()
@@ -71,7 +70,7 @@ class megacharizard_battle : AppCompatActivity() {
                     binding.megacharizardHPValue.text = (progressMegacharizard.toInt()).toString()
                     battle(megacharizardHP, progressMegacharizard)
                     Toast.makeText(
-                        this@megacharizard_battle,
+                        this@MegaCharizardBattle,
                         "Mewtwo used Psyshock.",
                         Toast.LENGTH_SHORT
                     ).show()
@@ -85,9 +84,9 @@ class megacharizard_battle : AppCompatActivity() {
     }
     private fun battle(progressBar: CircularProgressBar, progress: Float){
         if (progress ==0f){
-            Toast.makeText(this@megacharizard_battle, "Mewtwo fainted", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MegaCharizardBattle, "Mewtwo fainted", Toast.LENGTH_SHORT).show()
             Handler(Looper.getMainLooper()).postDelayed({
-                val intent = Intent(this@megacharizard_battle, giovanni_defeat::class.java)
+                val intent = Intent(this@MegaCharizardBattle, GiovanniDefeatScene::class.java)
                 startActivity(intent)
             }, 2000)
         }

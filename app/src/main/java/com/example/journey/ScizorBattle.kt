@@ -1,8 +1,6 @@
 package com.example.journey
 
 import android.content.Intent
-import com.example.journey.databinding.ActivityCharizardBattleBinding
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -11,7 +9,7 @@ import android.widget.Toast
 import com.example.journey.databinding.ActivityScizorBattleBinding
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
 
-class scizor_battle : AppCompatActivity() {
+class ScizorBattle : AppCompatActivity() {
     private lateinit var binding: ActivityScizorBattleBinding
 
 
@@ -48,9 +46,9 @@ class scizor_battle : AppCompatActivity() {
     }
     private fun battle(progressBar: CircularProgressBar, progress: Float) {
         if (progress == 0f) {
-            Toast.makeText(this@scizor_battle, "Bewear fainted", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@ScizorBattle, "Bewear fainted", Toast.LENGTH_SHORT).show()
             Handler(Looper.getMainLooper()).postDelayed({
-                val intent = Intent(this@scizor_battle, battle_defeat_jessie::class.java)
+                val intent = Intent(this@ScizorBattle, BattleDefeatJessie::class.java)
                 startActivity(intent)
             }, 2000)
         }

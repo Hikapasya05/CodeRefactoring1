@@ -19,23 +19,10 @@ class megacharizard_battle : AppCompatActivity() {
         setContentView(binding.root)
 
         val megacharizardHP = binding.megacharizardHP
-        megacharizardHP.apply {
-            setProgressWithAnimation(100f, 2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(megacharizardHP)
+
         val mewtwoHPmegacharizard = binding.mewtwoHPmegacharizard
-        mewtwoHPmegacharizard.apply {
-            setProgressWithAnimation(100f, 2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(mewtwoHPmegacharizard)
 
         var progressMewtwo = 100f
         var progressMegacharizard = 100f
@@ -106,5 +93,6 @@ class megacharizard_battle : AppCompatActivity() {
         }
         progressBar.setProgressWithAnimation(progress, 2000)
     }
+
 
 }

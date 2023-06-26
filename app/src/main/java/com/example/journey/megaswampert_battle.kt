@@ -19,26 +19,11 @@ class megaswampert_battle : AppCompatActivity() {
         setContentView(binding.root)
 
         val yanmegaHPmegaswampert = binding.yanmegaHPmegaswampert
-        yanmegaHPmegaswampert.apply {
-            setProgressWithAnimation(100f,2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(yanmegaHPmegaswampert)
         val megaswampertHP = binding.megaswampertHP
-        megaswampertHP.apply {
-            setProgressWithAnimation(100f,2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(megaswampertHP)
 
         var progress = 100f
-        var currentValue: Int = binding.yanmegaHPValuemegaswampert.text.toString().toInt()
         binding.waterfallBtn.setOnClickListener {
             progress -= 25f
             battle(yanmegaHPmegaswampert, progress)

@@ -21,27 +21,12 @@ class charizard_battle : AppCompatActivity() {
 
 
         val bewearHP = binding.bewearHP
-        bewearHP.apply {
-            setProgressWithAnimation(100f, 2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(bewearHP)
 
         val charizardHP = binding.charizardHP
-        charizardHP.apply {
-            setProgressWithAnimation(100f,2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(charizardHP)
 
         var progress = 100f
-        var currentValue: Int = binding.bewearHPValue.text.toString().toInt()
         binding.fireblastBtn.setOnClickListener {
             progress -= 25f
             battle(bewearHP, progress)

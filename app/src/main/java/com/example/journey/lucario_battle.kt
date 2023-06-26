@@ -18,27 +18,12 @@ class lucario_battle : AppCompatActivity() {
         setContentView(binding.root)
 
         val lucarioHP = binding.lucarioHP
-        lucarioHP.apply {
-            setProgressWithAnimation(100f,2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(lucarioHP)
         val mewtwoHPlucario = binding.mewtwoHPlucario
-        mewtwoHPlucario.apply {
-            setProgressWithAnimation(100f,2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(mewtwoHPlucario)
 
         var progressMewtwo = 100f
         var progressLucario = 100f
-        var currentvalue: Int = binding.mewtwoHPValuelucario.text.toString().toInt()
         binding.aurasphereBtn.setOnClickListener {
             Handler(Looper.getMainLooper()).postDelayed({
                 if(progressMewtwo >= 25) {

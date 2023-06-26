@@ -21,27 +21,12 @@ class scizor_battle : AppCompatActivity() {
         setContentView(binding.root)
 
         val bewearHPscizor = binding.bewearHPscizor
-        bewearHPscizor.apply {
-            setProgressWithAnimation(100f,2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(bewearHPscizor)
 
         val scizorHP = binding.scizorHP
-        scizorHP.apply {
-            setProgressWithAnimation(100f,2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(scizorHP)
 
         var progress = 100f
-        var currentValue: Int = binding.bewearHPValuescizor.text.toString().toInt()
         binding.bulletpunchBtn.setOnClickListener {
             progress -= 25f
             battle(bewearHPscizor, progress)

@@ -21,27 +21,12 @@ class salamence_battle : AppCompatActivity() {
         setContentView(binding.root)
 
         val yanmegaHPsalamence = binding.yanmegaHPsalamence
-        yanmegaHPsalamence.apply {
-            setProgressWithAnimation(100f,2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(yanmegaHPsalamence)
 
         val salamenceHP = binding.salamenceHP
-        salamenceHP.apply {
-            setProgressWithAnimation(100f,2000)
-            progressMax = 100f
-            progressBarColor = Color.GREEN
-            progressBarColorEnd = Color.GREEN
-            progressBarColorDirection = CircularProgressBar.GradientDirection.TOP_TO_BOTTOM
-            backgroundProgressBarColor = Color.GRAY
-        }
+        configureCircularProgressBar(salamenceHP)
 
         var progress = 100f
-        var currentValue: Int = binding.yanmegaHPValuesalamence.text.toString().toInt()
         binding.flamethrowerBtn.setOnClickListener {
             progress -= 25f
             battle(yanmegaHPsalamence, progress)

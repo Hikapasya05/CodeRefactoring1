@@ -1,13 +1,8 @@
 package com.example.journey
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.journey.databinding.ActivityCharizardBattleBinding
-import com.mikhaellopez.circularprogressbar.CircularProgressBar
 
 
 class CharizardBattle : AppCompatActivity() {
@@ -18,45 +13,12 @@ class CharizardBattle : AppCompatActivity() {
         binding = ActivityCharizardBattleBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        configureCircularProgressBar(binding.bewearHP)
+        configureCircularProgressBar(binding.charizardHP)
 
-        val bewearHP = binding.bewearHP
-        configureCircularProgressBar(bewearHP)
-
-        val charizardHP = binding.charizardHP
-        configureCircularProgressBar(charizardHP)
-
-        var progress = 100f
-        binding.fireblastBtn.setOnClickListener {
-            progress -= 25f
-            battle(bewearHP, progress)
-            binding.bewearHPValue.text = (progress.toInt()).toString()
-        }
-        binding.dragontailBtn.setOnClickListener {
-            progress -= 25f
-            battle(bewearHP, progress)
-            binding.bewearHPValue.text = (progress.toInt()).toString()
-
-        }
-        binding.seismictossBtn.setOnClickListener {
-            progress -= 25f
-            battle(bewearHP, progress)
-            binding.bewearHPValue.text = (progress.toInt()).toString()
-        }
-
-
-
-    }
-
-
-
-    private fun battle(progressBar: CircularProgressBar, progress: Float) {
-        if (progress == 0f) {
-            Toast.makeText(this@CharizardBattle, "Bewear fainted", Toast.LENGTH_SHORT).show()
-            Handler(Looper.getMainLooper()).postDelayed({
-                val intent = Intent(this@CharizardBattle, BattleDefeatJessie::class.java)
-                startActivity(intent)
-            }, 2000)
-        }
-        progressBar.setProgressWithAnimation(progress, 1000)
+        setupButton(binding.fireblastBtn, "Fire Blast", binding.bewearHP, binding.bewearHPValue,this@CharizardBattle)
+        setupButton(binding.dragontailBtn, "Dragon Tail", binding.bewearHP, binding.bewearHPValue, this@CharizardBattle)
+        setupButton(binding.seismictossBtn, "Seismic Toss", binding.bewearHP, binding.bewearHPValue, this@CharizardBattle)
     }
 }
+
